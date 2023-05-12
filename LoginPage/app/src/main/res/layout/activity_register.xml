@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/loginback">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KAYDOLUN"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/myrip2"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ad Soyad"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/myrip2"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/myrip2"
+        android:hint="*********@******.com"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/myrip2"
+        android:hint="Kullanıcı Adı"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtUsername"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/myrip2"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:textSize="30sp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/txtBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnRegister"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/myrip1"
+        android:gravity="center"
+        android:text="Zaten Hesabın Var Mı?"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"/>
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/myrip2"
+        android:text="kaydol"
+        android:textSize="30dp"/>
+
+
+</RelativeLayout>
